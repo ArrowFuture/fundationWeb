@@ -1,0 +1,112 @@
+    /* Estilos personalizados */
+    .hero-section {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(99, 9, 121, 0.865983893557423) 35%, rgba(136, 0, 255, 1) 100%);
+        color: white;
+    }
+
+    @keyframes hero-gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    /* Efectos animados en las tarjetas */
+    .framework-card {
+        background: linear-gradient(to right, #fc5c7d, #6a82fb);
+        color: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        transform: translateY(0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .framework-card:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+    }
+
+    /* Animación para los títulos de las pestañas */
+    .tabs-title>a {
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .tabs-title>a:hover,
+    .tabs-title.is-active>a {
+        color: #7f7fd5;
+        transform: scale(1.1);
+    }
+
+    /* Botón con transición de color */
+    .button {
+        background: linear-gradient(to right, #fc5c7d, #6a82fb);
+        border: none;
+        color: white;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+        background: linear-gradient(to right, #6a82fb, #fc5c7d);
+        transform: scale(1.05);
+    }
+
+    /* Animaciones para la sección de contacto */
+    .contact-form {
+        animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Estilos para el slider de imágenes */
+    .orbit-image {
+        transition: transform 0.3s ease;
+    }
+
+    .orbit-image:hover {
+        transform: scale(1.1);
+    }
+
+    #body-section {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(136, 0, 255, 1) 35%, rgba(166, 88, 235, 1) 100%);
+        background-size: cover;
+        background-position: center;
+        animation: hero-gradient 15s ease infinite;
+        padding: 5rem 0;
+        min-height: 100vh;
+    }
+
+    /* Estilo para el footer */
+    footer {
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer-content p {
+        margin: 0;
+        font-size: 14px;
+    }
